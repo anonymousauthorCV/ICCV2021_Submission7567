@@ -12,15 +12,15 @@ This code is built using Pytorch 1.7.1 with CUDA 10.2 and tested on Ubuntu 18.04
 The libs are included under `/util`, you need to first compile them where there is also a 'Readme.md' in each subfolder.
 
 ### 3)Download pre-trained models
-Download pre-trained models in `trained_model` folder from [Google Drive](https://drive.google.com/drive/folders/1-2gU_d2u3JH-N4vHhEEvuQ-ggzA4Xb93?usp=sharing) and put them on `trianed_model` dir.
+Download pre-trained models in `trained_model` folder from [Google Drive](https://drive.google.com/drive/folders/1Fzo-FZW3LhGqkIZkXAw5GV2UYae-bQjj?usp=sharing) and put them on `trianed_model` dir.
 
 ### 4) Testing
 For PCN:
-1. Download ShapeNet test data on [Google Drive](https://drive.google.com/drive/folders/1W0ASe-EWNtlweBzu5t8V7hUULDDw6gTc?usp=sharing). Put them on `data/pcn` folder. We use the same testing data in [PCN](https://www.cs.cmu.edu/~wyuan1/pcn/) project but we create the lmdb file for faster evaluation.
+1. Download ShapeNet test data on [Google Drive](https://drive.google.com/drive/folders/1o2Kwi-0127mVZjRJskY9tquJKTD-67Jm?usp=sharing). Put them on `data/pcn` folder. We use the same testing data in [PCN](https://www.cs.cmu.edu/~wyuan1/pcn/) project but we create the lmdb file for faster evaluation.
 2. Run `sh test.sh`. You should first modify the `model_path` to the folder containing your pre-trained model, and `data_path` to the testing files.
 
 For Completion3D:
-1. Download the test data on [Completion3D](https://completion3d.stanford.edu/). Put them on `data/completion3d` folder.
+1. Download the test data on [Google Drive](https://drive.google.com/drive/folders/1o2Kwi-0127mVZjRJskY9tquJKTD-67Jm?usp=sharing) or [Completion3D](https://completion3d.stanford.edu/). Put them on `data/completion3d` folder.
 2. Run `test_benchmark.sh` to generate the 'submission.zip' file for Compleiont3D dataset.
 
 
