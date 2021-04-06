@@ -3,7 +3,7 @@ import os
 
 import argparse
 from test_benchmark import test
-from train.ecg_train import train
+from train.train import train
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Point Cloud Completion')
 
