@@ -74,8 +74,8 @@ def log_setup(args):
 
 
 def data_setup(args, log_train):
-    dataset = eval(args.dataset)(train=True, npoints=args.num_points, use_mean_feature=args.use_mean_feature)
-    dataset_test = eval(args.dataset)(train=False, npoints=args.num_points, use_mean_feature=args.use_mean_feature, benchmark=False)
+    dataset = eval(args.dataset)(train=True, npoints=args.num_points, use_mean_feature=args.use_mean_feature, datapath=args.datapath)
+    dataset_test = eval(args.dataset)(train=False, npoints=args.num_points, use_mean_feature=args.use_mean_feature, benchmark=False, datapath=args.datapath)
     dataloader = torch.utils.data.DataLoader(dataset, batch_size=args.batch_size,
                                              shuffle=True, num_workers=int(args.workers))
     dataloader_test = torch.utils.data.DataLoader(dataset_test, batch_size=args.batch_size,
