@@ -29,8 +29,6 @@ def train(args):
         train_loss_meter.reset()
         net.module.model.train()
 
-        epoch = epoch + 19
-
         if epoch > 0 and epoch % 20 == 0:
             lrate = max(lrate * 0.7, 1e-6)
             for param_group in optimizer.param_groups:
