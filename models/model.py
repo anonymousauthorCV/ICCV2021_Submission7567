@@ -506,9 +506,9 @@ class EF_expansion(nn.Module):
         return edge_feature
 
 
-class ECG_decoder(nn.Module):
+class Trans_decoder(nn.Module):
     def __init__(self, num_coarse, num_fine, num_input, downsample_im=False, mirror_im=False, points_label=False, benchmark=False):
-        super(ECG_decoder, self).__init__()
+        super(Trans_decoder, self).__init__()
         self.num_coarse = num_coarse
         self.num_fine = num_fine
 
@@ -604,7 +604,7 @@ class Model(nn.Module):
         self.mirror_im = mirror_im
         print('self.mirror_im', self.mirror_im)
         self.encoder = PCN_encoder()
-        self.decoder = ECG_decoder(num_coarse, num_fine, num_input, downsample_im, mirror_im, points_label, benchmark)
+        self.decoder = Trans_decoder(num_coarse, num_fine, num_input, downsample_im, mirror_im, points_label, benchmark)
 
     def forward(self, x):
         feat = self.encoder(x)
