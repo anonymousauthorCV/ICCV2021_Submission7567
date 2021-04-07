@@ -27,7 +27,7 @@ For Completion3D:
 ### 5) Traning
 For PCN
 1. The training data are from [PCN repository](https://github.com/wentaoyuan/pcn), you can download training (`train.lmdb`, `train.lmdb-lock`) and validation (`valid.lmdb`, `valid.lmdb-lock`) data from `shapenet` directory on the provided training set link in PCN repository.
-2. Run `python create_pcn_h5.py` to generate the training files with `.h5` format.
+2. Run `python create_pcn_h5.py` to generate the training and validation files with `.h5` format.
 3. Run `sh run.sh` for training.
 
 For Compleiont3D:
