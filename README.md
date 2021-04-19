@@ -16,7 +16,7 @@ Download pre-trained models in `trained_model` folder from [Google Drive](https:
 
 ### 4) Testing
 For PCN:
-1. Download ShapeNet test data on [Google Drive](https://drive.google.com/drive/folders/1o2Kwi-0127mVZjRJskY9tquJKTD-67Jm?usp=sharing). Put them on `data/pcn` folder. We use the same testing data in [PCN](https://www.cs.cmu.edu/~wyuan1/pcn/) project but we create the lmdb file for faster evaluation.
+1. Download ShapeNet test data on [Google Drive](https://drive.google.com/drive/folders/1o2Kwi-0127mVZjRJskY9tquJKTD-67Jm?usp=sharing). Put them on `data/pcn` folder. We use the same testing data in [PCN](https://www.cs.cmu.edu/~wyuan1/pcn/) project but we use `h5` format.
 2. Run `sh test.sh`. You should first modify the `model_path` to the folder containing your pre-trained model, and `data_path` to the testing files.
 
 For Completion3D:
